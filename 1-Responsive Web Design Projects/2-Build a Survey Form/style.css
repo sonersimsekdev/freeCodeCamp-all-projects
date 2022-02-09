@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://images.wallpaperscraft.com/image/single/city_skyscrapers_street_248748_1920x1080.jpg");
+  font-size: 20px;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+#title,
+#description {
+  text-align: center;
+  color: white;
+}
+#title {
+  margin-top: 20px;
+  font-weight: 400;
+}
+#description {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+form {
+  padding: 40px 25px;
+  background-color: rgba(5, 5, 5, 0.7);
+  border-radius: 10px;
+  max-width: 700px;
+  min-width: 200px;
+}
+
+label,
+h4 {
+  color: white;
+  font-weight: 400;
+}
+
+input {
+  width: 100%;
+  font-weight: 300;
+  color: black;
+}
+#dropdown {
+  padding: 5px 10px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+}
+#dropdown2 {
+  padding: 5px 10px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+}
+option {
+  font-weight: 300;
+}
+
+#name {
+  padding: 10px 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#email {
+  padding: 10px 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#number {
+  padding: 10px 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+textarea {
+  border-radius: 10px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 125px;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 10px;
+  resize: vertical;
+}
+
+#submit {
+  height: 40px;
+  background-color: #5b5b5b;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
