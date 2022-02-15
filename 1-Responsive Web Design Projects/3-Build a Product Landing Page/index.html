@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page FCC</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <!--FontAwesome CDN CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <img
+        src="./assets/product-landing-page-logo.png"
+        id="header-img"
+        alt=""
+      />
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#howitworks" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+    </header>
+
+    <form action="https://www.freecodecamp.org/email-submit" id="form">
+      <div class="form-body">
+        <div class="form-element" id="form-text">
+          <h2>Handcrafted, home-made masterpieces</h2>
+        </div>
+        <div class="form-element" id="form-input">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+        <div class="form-element" id="form-button">
+          <button
+            type="submit"
+            name="email"
+            formaction="https://www.freecodecamp.org/email-submit" id="submit"
+          >
+            GET STARTED
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div id="features" class="section">
+      <div class="features-element">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="text">
+          <h2>Premium Materials</h2>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+      </div>
+      <div class="features-element">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="text">
+          <h2>Fast Shipping</h2>
+          <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        </div>
+      </div>
+      <div class="features-element">
+        <div class="icon"><i class="fa fa-3x fa-battery-full"></i></div>
+        <div class="text">
+          <h2>Quality Assurance</h2>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div id="howitworks" class="section">
+      <iframe
+        width="480"
+        height="300"
+        id="video"
+        src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    
+   
+    
+    <div id="pricing" class="section">
+      <div class="card">
+        <div class="card-head">TENOR TROMBONE</div>
+        <div class="card-body">
+          <h2>$600</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <div>
+          <button type="button" id="card-button">SELECT</button>
+        </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">BASS TROMBONE</div>
+        <div class="card-body">
+          <h2>$900</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <div>
+          <button type="submit" id="card-button">SELECT</button>
+        </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">VALVE TROMBONE</div>
+        <div class="card-body">
+          <h2>$1200</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <div>
+          <button type="button" formaction="https://www.freecodecamp.org/email-submit" id="card-button">SELECT</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div id="footer-links">
+        <a href="#" >Privacy</a>
+        <a href="#" >Terms</a>
+        <a href="#" >Contact</a>
+      </div>
+      <div id="copyright">Copyright 2016, Original Trombones</div>
+    </footer >
+
+    <!--FontAwesome CDN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+  </body>
+</html>

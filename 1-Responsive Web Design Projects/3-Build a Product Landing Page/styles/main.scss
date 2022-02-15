@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+
+
+$font :'Inter', sans-serif;
+$white:#EEEEEE;
+$whitegray : #DDDDDD;
+$black:#000000;
+$yellow:#F1C40F;
+$yellowHover:#FFA500;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    a:link, a:visited,a:hover,a:active  {
+        color: $black;
+      }
+    
+}
+ 
+body {
+    font-family: $font; 
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: $black;
+    font-size: 16px;
+    
+} 
+
+.section {
+    margin: 10px 0;
+}
+@media screen and (max-width: 800px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    footer {
+        max-width: 100%;
+    }
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    width: inherit;
+    padding: 1% 7%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    #header-img {
+        width: 300px;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    a {
+        margin-left: 50px;
+    }
+
+   
+     
+}
+
+
+button {
+    background-color: $yellow;
+    padding: 10px;
+    color: $black;
+    border: none;
+    
+}
+
+button:hover {
+    background-color: $yellowHover;
+    transition: 0.5s;
+    
+}
+form { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+    .form-element {
+        margin-top: 10px;
+        text-align: center;
+    }
+    input {
+        padding: 5px 20px;
+        
+    }
+     
+    
+    
+}
+
+
+
+#features {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    .features-element {
+        display: flex;
+        flex-direction: row;
+        margin: 30px 20px;
+        .text {
+           margin-left: 100px;
+           text-align: left;
+        }
+    }
+    .icon {
+        color: $yellowHover;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    width: 1000px;
+    background-color: $whitegray;
+     #footer-links {
+        a {
+            margin-left: 10px;
+        }
+     }
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+        
+        border: 1px solid black;
+    }
+    .card-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 50px;
+        background-color: $whitegray;
+    }
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 50px;
+        li {
+            padding-top: 10px;
+        }
+        #card-button {
+            margin-top: 10px;
+        }
+    }
+}
