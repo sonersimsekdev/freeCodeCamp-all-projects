@@ -1,0 +1,615 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Raleway:wght@700&display=swap");
+/*Fonts*/
+/*Colors*/
+/*Colors*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* i {
+  color: #f0f0f0;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+
+#navbar {
+  font-family: "Poppins", sans-serif;
+  background-color: #be3144;
+  z-index: 10;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#navbar .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1rem;
+}
+
+#navbar li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 20px;
+  list-style-type: none;
+}
+
+#navbar li:hover {
+  background-color: #45567d;
+}
+
+#navbar li a {
+  color: #f0f0f0;
+}
+
+#welcome-section {
+  background-color: #303841;
+  color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#welcome-section h1 {
+  font-size: 2.5em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+#welcome-section span {
+  font-size: 1.5em;
+  font-weight: 200;
+  font-style: italic;
+  color: #be3144;
+}
+
+#projects {
+  background-color: #45567d;
+  color: #f0f0f0;
+  width: 100%;
+  height: 155vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#projects h1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-bottom: 2px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #f0f0f0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#projects #button {
+  font-size: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #303841;
+  border: none;
+  border-radius: 2px;
+  -webkit-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out;
+}
+
+#projects #button:hover {
+  background-color: #be3144;
+}
+
+#projects #button a {
+  color: #f0f0f0;
+}
+
+#projects #button i {
+  margin-left: px;
+}
+
+#projects .project-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 auto;
+}
+
+#projects .project-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+#projects .project-link a img {
+  width: 500px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#projects .project-link a p {
+  text-align: center;
+  background-color: #303841;
+  margin-top: -1rem;
+  padding: 10px;
+  color: #f0f0f0;
+}
+
+#profilelink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 80vh;
+  width: 100%;
+  background-color: #303841;
+  color: #f0f0f0;
+}
+
+#profilelink h1 {
+  font-size: 64px;
+}
+
+#profilelink span {
+  font-style: italic;
+  font-weight: 200;
+}
+
+#profilelink .links {
+  padding-top: 40px;
+}
+
+#profilelink .links a {
+  color: #f0f0f0;
+  padding-right: 20px;
+}
+
+#profilelink .links a i {
+  margin-right: 10px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 50px;
+  border-top: 5px solid #be3144;
+  width: 100%;
+  background-color: #303841;
+  color: #f0f0f0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #000000;
+}
+
+@media only screen and (max-width: 1500px) {
+  #projects {
+    background-color: #45567d;
+    color: #f0f0f0;
+    width: 100%;
+    height: 410vh;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #projects h1 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-bottom: 2px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #f0f0f0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #projects #button {
+    font-size: 20px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #303841;
+    border: none;
+    border-radius: 2px;
+    -webkit-transition: background 0.3s ease-out;
+    transition: background 0.3s ease-out;
+  }
+  #projects #button:hover {
+    background-color: #be3144;
+  }
+  #projects #button a {
+    color: #f0f0f0;
+  }
+  #projects #button i {
+    margin-left: px;
+  }
+  #projects .project-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0 auto;
+  }
+  #projects .project-link a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px;
+  }
+  #projects .project-link a img {
+    width: 450px;
+    height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #projects .project-link a p {
+    text-align: center;
+    background-color: #303841;
+    margin-top: -1rem;
+    padding: 10px;
+    color: #f0f0f0;
+  }
+  #profilelink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 80vh;
+    width: 100%;
+    background-color: #303841;
+    color: #f0f0f0;
+  }
+  #profilelink h1 {
+    font-size: 32px;
+  }
+  #profilelink span {
+    font-style: italic;
+    font-weight: 200;
+  }
+  #profilelink .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 40px;
+  }
+  #profilelink .links a {
+    color: #f0f0f0;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  #profilelink .links a i {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #project {
+    background-color: #45567d;
+    color: #f0f0f0;
+    width: 100%;
+    height: 380vh;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #project h1 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 32px;
+    display: inline-flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-bottom: 2px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #f0f0f0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #project #button {
+    font-size: 20px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #303841;
+    border: none;
+    border-radius: 2px;
+    -webkit-transition: background 0.3s ease-out;
+    transition: background 0.3s ease-out;
+  }
+  #project #button:hover {
+    background-color: #be3144;
+  }
+  #project #button a {
+    color: #f0f0f0;
+  }
+  #project #button i {
+    margin-left: px;
+  }
+  #project .project-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0 auto;
+  }
+  #project .project-link a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px;
+  }
+  #project .project-link a img {
+    width: 420px;
+    height: 420px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #project .project-link a p {
+    text-align: center;
+    background-color: #303841;
+    margin-top: -1rem;
+    padding: 10px;
+    color: #f0f0f0;
+  }
+  #project .project-link a p .stext {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  #profilelink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 80vh;
+    width: 100%;
+    background-color: #303841;
+    color: #f0f0f0;
+  }
+  #profilelink h1 {
+    font-size: 32px;
+  }
+  #profilelink span {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 200;
+  }
+  #profilelink .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 40px;
+  }
+  #profilelink .links a {
+    color: #f0f0f0;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  #profilelink .links a i {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
